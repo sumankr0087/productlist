@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <RouterView/> -->
+  <Home />
+  <Filters />
+  <Pagination />
+  <keepExploring />
+  <startBuying />
+  <footers />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home.vue'
+import Filters from './components/filters.vue'
+import Pagination from './components/pagination.vue'
+import keepExploring from './components/keepExploring.vue'
+import startBuying from './components/startBuying.vue'
+import footers from './components/footers.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Home, Filters, Pagination, keepExploring, startBuying, footers
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
